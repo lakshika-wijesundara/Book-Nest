@@ -1,0 +1,59 @@
+
+
+.HomePage{
+  font-family: 'Georgia', serif;
+  margin-top: 40px; margin: 10;
+   background-color: #f9f4ee;
+}
+
+
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+}
+
+
+.text-section {
+  font-family: 'Georgia', serif; 
+  font-size: 3rem; 
+  font-weight: bold;
+  color: #4b3621; 
+  line-height: 1.4; 
+  white-space: nowrap; 
+  
+}
+.text-section h1 {
+  opacity: 0; /* Start invisible */
+  transform: translateY(70px); /* Start slightly below */
+  animation: fadeInSlideUp 2s ease-out forwards; /* Apply animation */
+  margin-left: 10;
+  font-size: 4.85rem;
+  color: #5a3c29;
+
+  text-align: center;
+  line-height: 1.4; 
+  white-space:wrap;
+  
+}
+/* Animation keyframes */
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Slide from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+.image-section .cover-image {
+  margin-top: 50px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 3px;
+  box-shadow: 0 4px 0px rgba(0, 0, 0, 0.2);
+}

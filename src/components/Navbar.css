@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding-top: 100px; /* Adjust based on the navbar height */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100px; /* Navbar height */
+}
+.logo {
+    width: 120px;
+  }
+  .profile-icon{
+    width: 50px;
+  }
+
+
+.navbar-logo img {
+    height: 80px; /* Adjust logo size */
+    margin-right: 15px;
+}
+
+.navbar-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4b3621; /* Dark brown */
+}
+
+/* Navigation Links */
+.navbar-links {
+    display: flex;
+    gap: 80px; /* Space between links */
+    font-size: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #4b3621; /* Dark brown */
+    font-weight: bold;
+    transition: color 0.3s;
+    margin: 0 10px; /* Additional spacing */
+}
+
+.navbar-links a:hover {
+    color: #8b4513; /* Lighter brown */
+}
+
+/* Profile Icon */
+.navbar-profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #d3b8a5; /* Soft beige */
+    padding: 5px;
+    object-fit: cover;
+}
+
+
+
+
