@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar'; 
-import HomePage from './components/HomePage'; 
-import RegisterForm from './components/RegisterForm'; 
-import Login from './components/Login'; 
+import HomePage from './Pages/HomePage'; 
+import RegisterForm from './Pages/RegisterForm'; 
+import Login from './Pages/Login'; 
 function App() {
   return (
     <Router>
