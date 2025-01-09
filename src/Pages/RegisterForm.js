@@ -33,6 +33,7 @@ const RegisterForm = () => {
   return (
     <div className="register-container">
       <form className="register-form" onSubmit={handleSubmit}>
+        
         <h2>Register for BookNest</h2>
         <input
           type="text"
@@ -82,7 +83,7 @@ const RegisterForm = () => {
           onChange={handleChange}
           required
         />
-        <button type="submit">Register Now</button>
+        <button type="submit"><a href="/homepage"><h2>Register Now</h2></a></button>
         <p>
           Already have an account? <a href="/login">Sign In</a>
         </p>

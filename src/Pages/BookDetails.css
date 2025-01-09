@@ -1,0 +1,114 @@
+/* Book Details Page Styles */
+.book-details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f3e9e0;
+  margin: 230px 20px 20px;
+}
+
+.book-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-image {
+  width: 350px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-info {
+  flex: 3;
+  margin-left: 20px;
+  padding: 40px;
+  background-color: #dec1a9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  height: auto;
+}
+
+.book-info label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.book-info strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.book-info input,
+.book-info textarea {
+  background-color: #ffffff; /* White background color */
+  color: #333; /* Text color */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  font-size: 14px;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow */
+}
+
+.book-info textarea {
+  resize: none;
+  height: 100px; /* Height for text areas */
+}
+
+.book-stats {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.book-stats span {
+  display: flex;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 220px; /* Space between buttons */
+}
+
+.add-to-cart-button,
+.read-now-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+.add-to-cart-button {
+  background-color: #534438; /* Green */
+  color: white;
+}
+
+.add-to-cart-button:hover {
+  background-color: #815532; /* Darker green */
+}
+
+.read-now-button {
+  background-color: #534438; /* Brown */
+  color: white;
+}
+
+.read-now-button:hover {
+  background-color: #815532; /* Darker brown */
+}

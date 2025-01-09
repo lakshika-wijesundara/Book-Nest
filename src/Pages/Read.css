@@ -1,0 +1,112 @@
+/* General Page Styling */
+.read-page-container {
+    margin-top: 1000px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0 auto;
+  max-width: 1500px;
+  min-height: 100vh; /* Ensure it spans the full height of the viewport */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    margin-top: 300px;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Header Section */
+.read-header {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap properly for smaller screens */
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.title{
+  display: inline-block;
+}
+.title,.add-to-cart-button-read{
+  display: inline-block;
+}
+.read-book-image img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.add-to-cart-button-read{
+    margin-top:5px;
+    margin-left: 300px;
+}
+.read-book-info {
+  flex: 1;
+}
+
+.read-book-info h1 {
+  font-size: 1.8rem;
+  margin: 0 0 10px;
+}
+
+.read-book-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.read-book-stats {
+  margin-top: 15px;
+  font-size: 1rem;
+  display: flex;
+  gap: 20px;
+  color: #555;
+}
+
+.add-to-cart-button-read{
+    width: 100px;
+    height:30px;
+    border-radius: 5px;
+    background-color: #534438; /* Green */
+    color: white;
+  }
+  
+  .add-to-cart-button-read:hover{
+        background-color: #815532; /* Darker green */
+  }
+/* Table of Contents */
+.table-of-contents {
+  margin-top: 30px;
+}
+
+.table-of-contents h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.table-of-contents ul {
+  list-style: none;
+  padding: 0;
+  max-height: 50vh; /* Set a maximum height */
+  overflow-y: auto; /* Add vertical scroll if content exceeds height */
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.chapter-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.chapter-item span {
+  font-size: 1rem;
+}
+
+.chapter-date {
+  color: #888;
+  font-style: italic;
+}
