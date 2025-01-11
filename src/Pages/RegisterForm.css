@@ -25,10 +25,12 @@ body {
 
 .register-form h2 {
   text-align: center;
-  color: #5a3c29;
+  color: #f8f5f4;
   margin-bottom: 20px;
 }
-
+.title{
+  color: #534438;
+}
 .register-form input {
   margin-bottom: 15px;
   padding: 10px;
@@ -43,7 +45,8 @@ body {
 }
 
 .register-form button {
-  background-color: #debaa4;
+  height: 80px;
+  background-color: #534438;
   color: #fff;
   padding: 10px;
   font-size: 16px;

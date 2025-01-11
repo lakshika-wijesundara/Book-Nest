@@ -1,6 +1,6 @@
 /* General Page Layout */
 .browse-page {
-  margin-top: 25vh;
+  margin-top: 30vh;
   padding: 20px;
   font-family: "Arial", sans-serif;
   background-color: #f7f4f1;
@@ -24,7 +24,7 @@
 /* Create New Book Button */
 .create-book-btn {
   display: inline-block; /* Ensures visibility */
-  position: fixed; /* Always visible at the top-right corner */
+  /* Always visible at the top-right corner */
   top: 33vh; /* Distance from the top */
   right: 70px; /* Distance from the right */
   padding: 10px 20px;
@@ -34,7 +34,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
-  z-index: 9999; /* Ensures it stays above all elements */
+  
 }
 
 .create-book-btn:hover {
@@ -43,29 +43,37 @@
 
 /* Top Search Bar */
 .top-search {
+  gap:20px;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
 .search-bar {
-  width: 300px;
+  width: 400px;
   padding: 10px;
   border-radius: 5px 0 0 5px;
   border: 1px solid #ccc;
   font-size: 1rem;
 }
-
+.search-bar-with-search{
+  gap:50px;
+}
 .search-btn {
   padding: 10px;
   background-color: #6b4423;
   color: white;
   border: none;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+  width: 60px;
+  height: 50px;
+ 
 }
+.searchIcon{
+  height: 25px;
 
+}
 .search-btn:hover {
   background-color: #55371a;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./Navbar.css";
 import logoIcon from "../assets/logoIcon.png"; // Correct path
 import profileIcon from "../assets/profileicon.png"; // Correct path
@@ -11,7 +12,9 @@ const Navbar = () => (
       <a href="/browse">Browse</a>
       <a href="/write">Write</a>
     </div>
-    <img src={profileIcon} alt="Profile Icon" className="profile-icon" />
+    <Link to="/profile"> {/* Use Link to navigate to the Profile page */}
+      <img src={profileIcon} alt="Profile Icon" className="profile-icon" />
+    </Link>
   </nav>
 );
 

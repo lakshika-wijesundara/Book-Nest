@@ -5,6 +5,7 @@ import heartsEntwined from "../assets/image6.png";
 import onceUponRainy from "../assets/image1.png";
 import stayWithMe from "../assets/image2.png";
 import ourSecretLove from "../assets/image3.png";
+import SearchIcon from "../assets/SearchIcon.png";
 
 // Book data
 const books = [
@@ -77,10 +78,17 @@ function Browse() {
       {/* Title */}
       <h1 className="browse-title">Explore Stories</h1>
 
-      {/* Search Bar */}
-      <div className="search-bar">
-        <input type="text" placeholder="Search a book by name" />
-        <button className="search-button"></button>
+     <div className="top-search">
+            <input className="search-bar" type="text" placeholder="Search a book by name" />
+            <button className="search-btn">
+                        <img
+                  src={SearchIcon}
+                  alt="Search"
+                  className="searchIcon"
+                />
+    
+            </button>
+        
       </div>
 
       {/* Filter Section */}
@@ -108,7 +116,7 @@ function Browse() {
         </div>
         <button className="filter-button">Filter</button>
       </div>
-
+        <h1>Recomondations</h1>
       {/* Genre Sections */}
       {genres.map((genre) => (
         <div key={genre} className="genre-section">

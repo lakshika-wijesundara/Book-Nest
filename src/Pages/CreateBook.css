@@ -1,6 +1,6 @@
 .create-book-container {
     width: 1000px;;
-    margin-top: 10vh;
+    margin-top: 30vh;
     padding: 30px;
     background-color: #f6eee4;
     color: #5a3826;
@@ -52,7 +52,9 @@
     cursor: pointer;
     transition: all 0.3s ease; /* Smooth transition effect */
   }
-  
+  .title{
+    font-size: 2.5rem;
+  }
   .btn:hover {
     background-color: #6a3f27;
     transform: translateY(-2px); /* Slight lift effect */

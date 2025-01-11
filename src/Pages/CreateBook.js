@@ -11,7 +11,7 @@ const CreateBook = () => {
   return (
     <div className="create-book-container">
       <header>
-        <h1>Create Your Book</h1>
+        <h1 class="title">Create Your Book</h1>
       </header>
 
       {/* Buttons */}

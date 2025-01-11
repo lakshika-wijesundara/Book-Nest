@@ -37,10 +37,32 @@
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.add-to-cart-button-read{
-    margin-top:5px;
-    margin-left: 300px;
-}
+ 
+.button-group {
+    display: flex;
+    gap: 80px; /* Space between buttons */
+    padding: 10px;
+  }
+  
+  .deletebook-button,
+  .editcontent-button,
+  .read-now-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+  }
+  .editcontent-button{
+    background-color: #534438; /* Brown */
+    color: white;
+  }
+  .editcontent-button:hover{
+    background-color: #815532; /* Darker brown */
+  }
 .read-book-info {
   flex: 1;
 }
@@ -64,17 +86,7 @@
   color: #555;
 }
 
-.add-to-cart-button-read{
-    width: 100px;
-    height:30px;
-    border-radius: 5px;
-    background-color: #534438; /* Green */
-    color: white;
-  }
-  
-  .add-to-cart-button-read:hover{
-        background-color: #815532; /* Darker green */
-  }
+
 /* Table of Contents */
 .table-of-contents {
   margin-top: 30px;

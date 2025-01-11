@@ -1,6 +1,6 @@
 /* Book Details Page Styles */
 .book-details-container {
-  display: flex;
+  margin-top: 30vh;  display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
@@ -80,7 +80,7 @@
 
 .button-group {
   display: flex;
-  gap: 220px; /* Space between buttons */
+  gap: 1000px; /* Space between buttons */
 }
 
 .add-to-cart-button,

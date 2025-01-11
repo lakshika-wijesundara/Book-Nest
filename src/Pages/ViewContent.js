@@ -1,8 +1,12 @@
+
+
+
+
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
-import "./Read.css";
+import "./ViewContent.css";
 
-function Read() {
+function ViewContent() {
   const location = useLocation();
   const book = location.state?.book;
 
@@ -95,12 +99,10 @@ function Read() {
         <div className="read-book-info">
           <div className="title">
             <h1>{book.title}</h1>
-            <button
-              className="add-to-cart-button-read"
-              onClick={() => console.log("Add to Library clicked!")}
-            >
-              Add to Library
-            </button>
+            <div className="button-group">
+            <button className="editcontent-button">Edit</button>
+            <button className="deletebook-button">Delete Book</button>
+          </div>
           </div>
           <p>
             <strong>Writer:</strong> {book.author}
@@ -120,7 +122,7 @@ function Read() {
           {chapters.map((chapter, index) => (
             <li key={index} className="chapter-item">
               <Link
-                to="/chapter"
+                to="/writer-chapter-page"
                 state={{ bookTitle: book.title, chapter }}
                 className="chapter-link"
               >
@@ -135,4 +137,4 @@ function Read() {
   );
 }
 
-export default Read;
+export default ViewContent;

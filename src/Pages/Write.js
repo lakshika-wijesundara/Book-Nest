@@ -5,6 +5,7 @@ import heartsEntwined from "../assets/image6.png";
 import onceUponRainy from "../assets/image1.png";
 import stayWithMe from "../assets/image2.png";
 import ourSecretLove from "../assets/image3.png";
+import SearchIcon from "../assets/SearchIcon.png";
 
 // Book data
 const books = [
@@ -55,12 +56,12 @@ const BookCard = ({ book, onClick }) => (
   </div>
 );
 
-function Browse() {
+function Write() {
   const navigate = useNavigate();
   const genres = [...new Set(books.map((book) => book.genre))];
 
   const handleBookClick = (book) => {
-    navigate(`/bookdetails`, { state: book });
+    navigate(`/writebookdetails`, { state: book });
   };
 
   return (
@@ -73,17 +74,23 @@ function Browse() {
       {/* Title */}
       <h1 className="main-text">My Stories</h1>
 
-      {/* Create New Book Button */}
-      <button className="create-book-btn" onClick={() => navigate("/addstory")}>
-        Create New Book
-      </button>
+      
 
       {/* Search Bar */}
       <div className="top-search">
         <input className="search-bar" type="text" placeholder="Search a book by name" />
         <button className="search-btn">
-          <i className="fa fa-search"></i>
+                    <img
+              src={SearchIcon}
+              alt="Search"
+              className="searchIcon"
+            />
+
         </button>
+        {/* Create New Book Button */}
+      <button className="create-book-btn" onClick={() => navigate("/addstory")}>
+        Create New Book
+      </button>
       </div>
 
       {/* Filter Section */}
@@ -133,4 +140,4 @@ function Browse() {
   );
 }
 
-export default Browse;
+export default Write;
